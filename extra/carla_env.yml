@@ -1,0 +1,13 @@
+name: carla
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - scipy
+  - matplotlib
+  - tqdm
+  - pip
+  - pip:
+      - opencv-contrib-python==4.7.0.72
+      - pygame==2.3.0

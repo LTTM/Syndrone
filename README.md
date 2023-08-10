@@ -105,8 +105,8 @@ To download the dataset please use this [link](https://lttm.dei.unipd.it/paper_d
 
 This project was created by:
 
-- Francesco Barbato
-- Matteo Caligiuri
-- Giulia Rizzoli
+- [Francesco Barbato](https://github.com/barbafrank)
+- [Matteo Caligiuri](https://github.com/matteocali)
+- [Giulia Rizzoli](https://github.com/rizzoligiulia)
 
 (Dipartimento di Ingegneria dell'Informazione (DEI) - UniPD)

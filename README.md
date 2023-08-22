@@ -2,13 +2,28 @@
 
 This repository contains all the code and tools needed to build the "Syndrone" generated using the [CARLA](https://carla.org/) simulator.
 
-The repository is organized in four branches:
+The repository is organized into four branches:
 1. main: dataset generation code
 2. analyses: code used to compute the benchmark semantic segmentation numerical results
 3. synth2real: code used to compute the benchmark domain adaptation numerical results
 4. detection: code used to compute the benchmark object detection numerical results
 
-To download the dataset please use this [link](https://lttm.dei.unipd.it/paper_data/syndrone/syndrone.zip)
+You can either download the full dataset [here](https://lttm.dei.unipd.it/paper_data/syndrone/syndrone.zip) or download each sensor from the table below.
+- Color ZIPs contain RGB images, Semantic Segmentation labels, Camera Extrinsics, and Bounding Box ground truth.
+- Depth ZIPs contain the depth frames
+- LiDAR ZIPs contain the LiDAR frames
+- [Split ZIP](https://lttm.dei.unipd.it/paper_data/syndrone/splits.zip) contains the lists of samples to use for training and test sets.
+
+|   Town   | Color | Depth | LiDAR |
+| :------: | :---: | :---: | :---: |
+|  Town01  | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town01_Opt_120_color.zip) | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town01_Opt_120_depth.zip) | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town01_Opt_120_lidar.zip) |
+|  Town02  | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town02_Opt_120_color.zip) | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town02_Opt_120_depth.zip) | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town02_Opt_120_lidar.zip) |
+|  Town03  | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town03_Opt_120_color.zip) | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town03_Opt_120_depth.zip) | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town03_Opt_120_lidar.zip) |
+|  Town04  | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town04_Opt_120_color.zip) | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town04_Opt_120_depth.zip) | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town04_Opt_120_lidar.zip) |
+|  Town05  | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town05_Opt_120_color.zip) | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town05_Opt_120_depth.zip) | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town05_Opt_120_lidar.zip) |
+|  Town06  | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town06_Opt_120_color.zip) | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town06_Opt_120_depth.zip) | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town06_Opt_120_lidar.zip) |
+|  Town07  | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town07_Opt_120_color.zip) | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town07_Opt_120_depth.zip) | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town07_Opt_120_lidar.zip) |
+| Town10HD | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town10HD_Opt_120_color.zip) | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town10HD_Opt_120_depth.zip) | [link](https://lttm.dei.unipd.it/paper_data/syndrone/Town10HD_Opt_120_lidar.zip) |
 
 ## How to run the code
 
@@ -27,7 +42,7 @@ To download the dataset please use this [link](https://lttm.dei.unipd.it/paper_d
     conda activate syndrone
     ```
 
-4. Install the **CARLA python API** provided in the carla zip file with the following command (if you use windows make sure change the name to install the appropriate wheel file):
+4. Install the **CARLA python API** provided in the carla zip file with the following command (if you use Windows make sure to change the name to install the appropriate wheel file):
 
     ```bash
     pip install "<CARLA_installation_folder>/PythonAPI/carla/dist/carla-0.9.12-cp39-cp39-linux_x86_64.whl"

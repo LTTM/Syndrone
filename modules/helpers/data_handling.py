@@ -14,7 +14,7 @@ def out_folders_gen(
     use_lidar: bool,
     master_pbar: tqdm = None,
     verbose: bool = False,
-    root_dir = "data"
+    root_dir = Path(data)
 ) -> None:
     """
     Generates the output folders for the rendering

@@ -2,6 +2,9 @@
 
 This repository contains all the code and tools needed to build the "Syndrone" generated using the [CARLA](https://carla.org/) simulator.
 
+Everything reported in this repository refers to the work done in the paper: [**"SynDrone--Multi-modal UAV Dataset for Urban Scenarios
+"**](https://arxiv.org/abs/2308.10491)
+
 The repository is organized into four branches:
 1. main: dataset generation code
 2. analyses: code used to compute the benchmark semantic segmentation numerical results
@@ -125,3 +128,18 @@ This project was created by:
 - [Giulia Rizzoli](https://github.com/rizzoligiulia)
 
 (Dipartimento di Ingegneria dell'Informazione (DEI) - UniPD)
+
+---
+
+## Citations
+
+If you want to use this work cite it using:
+```
+@article{rizzoli2023syndrone,
+    title={SynDrone--Multi-modal UAV Dataset for Urban Scenarios},
+    author={Rizzoli, Giulia and Barbato, Francesco and Caligiuri, Matteo and Zanuttigh, Pietro},
+    journal={arXiv preprint arXiv:2308.10491},
+    year={2023}
+}
+```
+

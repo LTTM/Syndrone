@@ -72,7 +72,7 @@ if __name__ == "__main__":
     writer = SummaryWriter(args.logdir, flush_secs=.5)
     device = 'cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu'
     
-    model = fasterrcnn_mobilenet_v3_large_fpn(num_classes=9)
+    model = fasterrcnn_mobilenet_v3_large_fpn(num_classes=10)
     model.to(device)
     optim = Adam(model.parameters(), lr=args.lr)
 

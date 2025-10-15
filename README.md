@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> We have released a newer and improved version of this dataset: [FlyAwareV2](https://github.com/LTTM/FlyAwareV2).
+> 
+> We strongly sugget usining this newer version for upcoming research.
+
 # Drones dataset
 
 This repository contains all the code and tools needed to build the "Syndrone" generated using the [CARLA](https://carla.org/) simulator.
